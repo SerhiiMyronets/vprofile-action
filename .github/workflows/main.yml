@@ -54,7 +54,7 @@ jobs:
       - name: Code checkout
         uses: actions/checkout@v4
 
-      - name: upload image to ECR
+      - name: Build and upload image to ECR
         uses: appleboy/docker-ecr-action@master
         with:
           access_key: ${{ secrets.AWS_ACCESS_KEY_ID}}
