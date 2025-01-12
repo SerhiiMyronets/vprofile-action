@@ -101,6 +101,6 @@ jobs:
           cluster-name: ${{ env.EKS_CLUSTER }}
           chart-path: helm/vprofilecharts
           namespace: default
-          values: appimage=${{ secrets.REISTRY }}/${{ env.ECR_REPO }}, apptag=${{ github.run_number }}
+          values: appimage=${{ secrets.REGISTRY }}/${{ env.ECR_REPO }}, apptag=${{ github.run_number }}
           name: vprofile-stack
 
